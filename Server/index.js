@@ -23,7 +23,7 @@ app.use('/api', limiter);
 
 // CORS configuration
 app.use(cors({
-  origin: 'http://localhost:5173', // Vite default port
+  origin: ['http://localhost:5173', 'https://expense-tracker-3if9.vercel.app'],
   credentials: true
 }));
 
