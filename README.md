@@ -1,5 +1,4 @@
-# ExpenseTracker
-Expense-Tracker/
+[projectdes.txt](https://github.com/user-attachments/files/25397895/projectdes.txt)# ExpenseTracker[UploadinExpense-Tracker/
 │
 ├── Client/                          # Frontend - React + Vite
 │   ├── node_modules/
@@ -76,7 +75,9 @@ Expense-Tracker/
 │   ├── package.json
 │   └── README.md                        # API documentation
 │
-└── README.md                            # Project overview
+└── README.md                            # Project overviewg projectdes.txt…]()
+
+
 📝 Project Description
 Expense Tracker - Personal Finance Tool
 A full-stack expense tracking application built with the MERN stack (MongoDB, Express.js, React, Node.js) that helps users record and analyze their personal expenses.
