@@ -1,58 +1,66 @@
-📊 Expense Tracker - Personal Finance Tool
-📋 Project Overview
-A full-stack expense tracking application built with the MERN stack (MongoDB, Express.js, React, Node.js) that helps users record, manage, and analyze their personal expenses. Designed for production-like quality with resilience features for real-world conditions including unreliable networks, browser refreshes, and duplicate submissions.
+# 💰 Expense Tracker - Personal Finance Tool
 
-🚀 Live Demo
-Frontend: https://expense-tracker-3if9.vercel.app/
+A full-stack expense tracking application built with the MERN stack (MongoDB, Express.js, React, Node.js) that helps users record, manage, and analyze their personal expenses. Designed with production-quality features including resilience for real-world conditions.
 
-Backend API: https://expense-tracker-hddt.onrender.com
+## 🚀 Live Demo
 
-**✨ Features**
-*Core Features (All Implemented ✓)*
-**Feature	          Description**
-Create Expenses	    Add new expenses with amount (₹), category, description, and date
-View Expenses	      Sortable table displaying all expenses with proper formatting
-Filter by Category	Dynamic dropdown filter populated from existing categories
-Sort by Date	      Newest first (default) with toggle option for oldest first
-Real-time Total	    Automatic calculation of visible expenses with ₹ formatting
+- **Frontend:** [https://expense-tracker-3if9.vercel.app/](https://expense-tracker-3if9.vercel.app/)
+- **Backend API:** [https://expense-tracker-hddt.onrender.com](https://expense-tracker-hddt.onrender.com)
 
-*Resilience Features*
-Idempotency: Prevents duplicate expense creation on page refresh or retry
-Retry Logic: Automatic retry (3 attempts) with exponential backoff for failed API calls
-Loading States: Visual feedback during all async operations
-Error Handling: User-friendly error messages with retry options
-Form Validation: Client-side validation before submission
-Error Boundary: Graceful component failure handling
+## ✨ Features
 
-**Nice-to-Have Features**
-✅ Basic validation (no negative amounts, required fields, max limits)
-✅ Summary view (total per category with counts and averages)
-✅ Error and loading states throughout UI
-✅ Responsive design for mobile/desktop
-✅ Toast notifications for success/error feedback
-✅ Debounced inputs for performance
+### Core Features ✓
+| Feature | Description |
+|---------|-------------|
+| **Create Expenses** | Add new expenses with amount (₹), category, description, and date |
+| **View Expenses** | Sortable table displaying all expenses with proper formatting |
+| **Filter by Category** | Dynamic dropdown filter populated from existing categories |
+| **Sort by Date** | Newest first (default) with toggle option for oldest first |
+| **Real-time Total** | Automatic calculation of visible expenses with ₹ formatting |
 
-🛠️ Technology Stack
-**FRONTEND**
-**Technology   Purpose**
-React 18	    UI library with hooks and functional components
-Vite	        Fast build tool and development server
-Tailwind CSS	Utility-first CSS framework for styling
-Axios	        HTTP client with interceptors and retry logic
-date-fns	    Date manipulation and formatting
-Context API	  State management
-**BACKEND**
-**Technology	Purpose**
-Node.js	      JavaScript runtime
-Express	      Web framework
-MongoDB	      NoSQL database
-Mongoose	    ODM for data modeling
-Helmet	      Security headers
-Express       Rate Limit	API rate limiting
-CORS	        Cross-origin resource sharing
+### Resilience Features ✓
+- **Idempotency:** Prevents duplicate expense creation on page refresh or retry
+- **Retry Logic:** Automatic retry (3 attempts) with exponential backoff for failed API calls
+- **Loading States:** Visual feedback during all async operations
+- **Error Handling:** User-friendly error messages with retry options
+- **Form Validation:** Client-side validation before submission
+- **Error Boundary:** Graceful component failure handling
 
-**PROJECT STRUCTURE**
+### Additional Features ✓
+- ✅ Basic validation (no negative amounts, required fields, max limits)
+- ✅ Summary view (total per category with counts and averages)
+- ✅ Error and loading states throughout UI
+- ✅ Responsive design for mobile/desktop
+- ✅ Toast notifications for success/error feedback
+- ✅ Debounced inputs for performance
 
+## 🛠️ Technology Stack
+
+### Frontend
+| Technology | Purpose |
+|------------|---------|
+| React 18 | UI library with hooks and functional components |
+| Vite | Fast build tool and development server |
+| Tailwind CSS | Utility-first CSS framework for styling |
+| Axios | HTTP client with interceptors and retry logic |
+| date-fns | Date manipulation and formatting |
+| Context API | State management |
+
+### Backend
+| Technology | Purpose |
+|------------|---------|
+| Node.js | JavaScript runtime |
+| Express | Web framework |
+| MongoDB | NoSQL database |
+| Mongoose | ODM for data modeling |
+| Helmet | Security headers |
+| Express Rate Limit | API rate limiting |
+| CORS | Cross-origin resource sharing |
+
+## 📁 Project Structure
+## **PROJECT STRUCTURE**
+
+```plaintext
 📦 Expense-Tracker
 │
 ├── 📂 Client/                          # Frontend - React + Vite
@@ -118,33 +126,54 @@ CORS	        Cross-origin resource sharing
 │   └── 📄 package.json
 │
 └── 📄 README.md                                # Project documentation
+```
 
 
-**Backend Setup**
-bash
+
+
+---
+
+---
+
+# ⚙️ Setup Instructions
+
+```bash
 # Clone the repository
 git clone <repository-url>
+
+# -------------------------
+# Backend Setup
+# -------------------------
+
 cd Server
 
-# Install dependencies
+# Install backend dependencies
 npm install
 
 # Create environment file
 cp .env.example .env
+
 # Update .env with your MongoDB URI
 
-# Start development server
+# Start backend development server
 npm run dev
-Frontend Setup
-bash
-cd Client
 
-# Install dependencies
+
+# -------------------------
+# Frontend Setup
+# -------------------------
+
+cd ../Client
+
+# Install frontend dependencies
 npm install
 
 # Create environment file
 cp .env.example .env
-# Update VITE_API_URL if needed (default: http://localhost:5000/api)
 
-# Start development server
+# Update VITE_API_URL if needed
+# Default: http://localhost:5000/api
+
+# Start frontend development server
 npm run dev
+```
