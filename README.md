@@ -5,7 +5,7 @@ A full-stack expense tracking application built with the MERN stack (MongoDB, Ex
 ## 🚀 Live Demo
 
 - **Frontend:** [https://expense-tracker-3if9.vercel.app/](https://expense-tracker-3if9.vercel.app/)
-- **Backend API:** [https://expense-tracker-hddt.onrender.com](https://expense-tracker-hddt.onrender.com)
+- **Backend:** [https://expense-tracker-hddt.onrender.com](https://expense-tracker-hddt.onrender.com)
 
 ## ✨ Features
 
